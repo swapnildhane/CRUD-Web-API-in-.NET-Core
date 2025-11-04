@@ -68,7 +68,7 @@
 <b>6. Create Controller</b>
    Inside Controllers/, create ProductsController.cs:
 
-<b>7. Create Database via Migration
+<b>7. Create Database via Migration</b>
    dotnet ef migrations add InitialCreate
    dotnet ef database update
 
