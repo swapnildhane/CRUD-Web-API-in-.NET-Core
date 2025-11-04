@@ -34,7 +34,7 @@
   "AllowedHosts": "*"
   }
 
-<b>5. Register EF Core & DI in Program.cs</b>
+<b>5. Register EF Core & DI in Program.cs </b>
    Open Program.cs and add:
    using Microsoft.EntityFrameworkCore;
     using ProductAPI.Data;
@@ -77,7 +77,7 @@
    dotnet watch
 
 <b>Final Folder Structure</b>
-
+<p>
 ProductAPI/
 │
 ├── Controllers/
@@ -91,13 +91,13 @@ ProductAPI/
 ├── appsettings.json
 ├── Program.cs
 └── ProductAPI.csproj
-
+</P>
 
 optionals 
 
 dotnet add package Microsoft.EntityFrameworkCore
-dotnet add package Microsoft.EntityFrameworkCore.SqlServer
-dotnet tool install --global dotnet-ef
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer<br>
+dotnet tool install --global dotnet-ef<br>
 dotnet ef --version
 
 
