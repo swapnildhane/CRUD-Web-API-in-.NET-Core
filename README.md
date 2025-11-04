@@ -3,20 +3,20 @@
 <h4>Steps</h4>
 
 <b>1. Create the Project</b>
-   
-  bash
-  dotnet new webapi -n ProductAPI
-  cd ProductAPI
+   <br>
+  bash<br>
+  dotnet new webapi -n ProductAPI<br>
+  cd ProductAPI<br>
 
 <b>2. Create the Model</b>
   Inside the Models/ folder, create a file Product.cs:
 
-<b>3. Setup Entity Framework Core (Database)</b>
-   Install EF Core packages:
-   dotnet add package Microsoft.EntityFrameworkCore.SqlServer
-   dotnet add package Microsoft.EntityFrameworkCore.Tools
+<b>3. Setup Entity Framework Core (Database)</b><br>
+   Install EF Core packages:<br>
+   dotnet add package Microsoft.EntityFrameworkCore.SqlServer<br>
+   dotnet add package Microsoft.EntityFrameworkCore.Tools<br>
 
-   Create a new folder Data/
+   Create a new folder Data/<br>
    Inside it, create AppDbContext.cs:
 
 <b>4. Configure Database Connection</b><br>
@@ -68,13 +68,13 @@
 <b>6. Create Controller</b>
    Inside Controllers/, create ProductsController.cs:
 
-<b>7. Create Database via Migration</b>
-   dotnet ef migrations add InitialCreate
-   dotnet ef database update
+<b>7. Create Database via Migration</b><br>
+   dotnet ef migrations add InitialCreate<br>
+   dotnet ef database update<br>
 
-<b>8. Run and Test the API</b>
-   dotnet run
-   dotnet watch
+<b>8. Run and Test the API</b><br>
+   dotnet run<br>
+   dotnet watch<br>
 
 <b>Final Folder Structure</b>
 <p>
