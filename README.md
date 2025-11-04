@@ -19,20 +19,20 @@
    Create a new folder Data/
    Inside it, create AppDbContext.cs:
 
-<b>4. Configure Database Connection</b>
-   In appsettings.json, add your SQL connection string:
-   {
-  "ConnectionStrings": {
-    "DefaultConnection": "Server=.;Database=ProductDB;Trusted_Connection=True;TrustServerCertificate=True;"
-  },
-  "Logging": {
-    "LogLevel": {
-      "Default": "Information",
-      "Microsoft.AspNetCore": "Warning"
-    }
-  },
-  "AllowedHosts": "*"
-  }
+<b>4. Configure Database Connection</b><br>
+   In appsettings.json, add your SQL connection string:<br>
+   {<br>
+  "ConnectionStrings": {<br>
+    "DefaultConnection": "Server=.;Database=ProductDB;Trusted_Connection=True;TrustServerCertificate=True;"<br>
+  },<br>
+  "Logging": {<br>
+    "LogLevel": {<br>
+      "Default": "Information",<br>
+      "Microsoft.AspNetCore": "Warning"<br>
+    }<br>
+  },<br>
+  "AllowedHosts": "*"<br>
+  }<br>
 
 <b>5. Register EF Core & DI in Program.cs </b>
    Open Program.cs and add:
