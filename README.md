@@ -1,16 +1,17 @@
 # CRUD Web API in .NET Core
 
-Steps
-1. Create the Project
+<h4>Steps</h4>
+
+<b>1. Create the Project</b>
    
   bash
   dotnet new webapi -n ProductAPI
   cd ProductAPI
 
-2. Create the Model
+<b>2. Create the Model</b>
   Inside the Models/ folder, create a file Product.cs:
 
-3. Setup Entity Framework Core (Database)
+<b>3. Setup Entity Framework Core (Database)</b>
    Install EF Core packages:
    dotnet add package Microsoft.EntityFrameworkCore.SqlServer
    dotnet add package Microsoft.EntityFrameworkCore.Tools
@@ -18,7 +19,7 @@ Steps
    Create a new folder Data/
    Inside it, create AppDbContext.cs:
 
-4. Configure Database Connection
+<b>4. Configure Database Connection</b>
    In appsettings.json, add your SQL connection string:
    {
   "ConnectionStrings": {
@@ -33,7 +34,7 @@ Steps
   "AllowedHosts": "*"
   }
 
-5. Register EF Core & DI in Program.cs
+<b>5. Register EF Core & DI in Program.cs</b>
    Open Program.cs and add:
    using Microsoft.EntityFrameworkCore;
     using ProductAPI.Data;
@@ -64,14 +65,14 @@ Steps
     
     app.Run();
 
-6. Create Controller
+<b>6. Create Controller</b>
    Inside Controllers/, create ProductsController.cs:
 
-7. Create Database via Migration
+<b>7. Create Database via Migration
    dotnet ef migrations add InitialCreate
    dotnet ef database update
 
-8. Run and Test the API
+<b>8. Run and Test the API</b>
    dotnet run
    dotnet watch
 
